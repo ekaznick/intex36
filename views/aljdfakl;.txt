@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Social Media Usage Survey</h2>
+        <form>
+            <!-- Age -->
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="age" placeholder="Age">
+                <label for="age">Age</label>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-floating mb-3">
+                <select class="form-select" id="gender" aria-label="Gender">
+                    <option selected>Choose...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="gender">Gender</label>
+            </div>
+
+            <!-- Relationship Status -->
+            <div class="form-floating mb-3">
+                <select class="form-select" id="relationshipStatus" aria-label="Relationship Status">
+                    <option selected>Choose...</option>
+                    <option value="single">Single</option>
+                    <option value="in_a_relationship">In a Relationship</option>
+                    <option value="married">Married</option>
+                    <option value="prefer_not_to_say">Prefer not to say</option>
+                </select>
+                <label for="relationshipStatus">Relationship Status</label>
+            </div>
+
+            <!-- More fields go here... -->
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and its dependencies (Popper.js and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>

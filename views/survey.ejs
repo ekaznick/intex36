@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .btn-circle {
+            width: 60px;
+            height: 50px;
+            padding: 12px 0px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.42857;
+            background-color: lightgray;
+            border: 2px solid darkgray;
+        }
+        .btn-circle:hover, .btn-circle:focus {
+            background-color: darkgray;
+            color: white;
+        }
+        .btn-circle.active {
+            background-color: darkgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mx-0 justify-content-center">
+          <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0">
+            <form method="POST" class="w-100 rounded p-4 border bg-white" action="https://herotofu.com/start">
+              <label class="d-block mb-4">
+                <span class="d-block mb-2">Your name</span>
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Joe Bloggs"/>
+              </label>
+      
+              <label class="d-block mb-4">
+                <span class="d-block mb-2">Email address</span>
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="joe.bloggs@example.com"/>
+              </label>
+      
+              <label class="d-block mb-4">
+                <span class="d-block mb-2">When is your birthday?</span>
+                <input name="birthday" type="date" class="form-control" />
+              </label>
+      
+              <label class="d-block mb-4">
+                <span class="d-block mb-2"
+                  >What kind of present you expect this year?</span>
+                <select name="present" class="custom-select">
+                  <option>Chocolate cake</option>
+                  <option>Dancing cat</option>
+                  <option>Custom meme about me</option>
+                  <option>Zoom backgrounds for the rest of my life</option>
+                </select>
+              </label>
+      
+              <div class="mb-4">
+                <div>
+                  <label class="custom-control custom-radio">
+                    <input
+                      name="season"
+                      value="summer"
+                      type="radio"
+                      class="custom-control-input"
+                      checked/>
+                    <span class="d-inline-block mt-1 custom-control-label"
+                      >I like summer</span>
+                  </label>
+                </div>
+      
+                <div>
+                  <label class="custom-control custom-radio">
+                    <input
+                      name="season"
+                      value="winter"
+                      type="radio"
+                      class="custom-control-input"/>
+                    <span class="d-inline-block mt-1 custom-control-label"
+                      >I'm more into winter</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <p>How often do you find yourself using social media without a specific purpose?</p>
+                <div class="btn-group" role="group" aria-label="Social Media Usage Frequency">
+                    <input type="radio" class="btn-check" name="socialMediaUsage" id="usage1" autocomplete="off" value="1">
+                    <label class="btn btn-circle" for="usage1">1</label>
+
+                    <input type="radio" class="btn-check" name="socialMediaUsage" id="usage2" autocomplete="off" value="2">
+                    <label class="btn btn-circle" for="usage2">2</label>
+
+                    <input type="radio" class="btn-check" name="socialMediaUsage" id="usage3" autocomplete="off" value="3">
+                    <label class="btn btn-circle" for="usage3">3</label>
+
+                    <input type="radio" class="btn-check" name="socialMediaUsage" id="usage4" autocomplete="off" value="4">
+                    <label class="btn btn-circle" for="usage4">4</label>
+
+                    <input type="radio" class="btn-check" name="socialMediaUsage" id="usage5" autocomplete="off" value="5">
+                    <label class="btn btn-circle" for="usage5">5</label>
+                </div>
+            </div>
+      
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary px-3">
+                  Send Answers
+                </button>
+              </div>
+      
+              <div class="d-block text-right">
+                <div class="small">
+                  by
+                  <a
+                    href="https://herotofu.com/start"
+                    class="text-dark"
+                    target="_blank"
+                    >HeroTofu</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>      
+</body>
+</html>
